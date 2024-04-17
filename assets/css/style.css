@@ -1,0 +1,1161 @@
+
+/*********************  Default-CSS  *********************/
+
+
+/*
+    font-family: 'Montserrat', sans-serif;
+ */
+
+
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    line-height: 1.4;
+    color: #444444;
+    font-size: 18px;
+    font-weight: 500;
+}
+.anim{
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+a,
+div a:hover,
+div a:active,
+div a:focus,
+button {
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+a,
+span,
+a:hover,
+a:active,
+button {
+    text-decoration: none;
+}
+
+*::after,
+*::before,
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+    outline: none;
+}
+
+a:hover {
+    color: #fff;
+}
+
+body .clearfix,
+body .clear {
+    clear: both;
+    line-height: 100%;
+}
+
+body .clearfix {
+    height: auto;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+.cm-overflow{
+    overflow: hidden;
+}
+.common-btn {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #fff;
+    display: inline-block;
+    border-radius:10px;
+    padding: 18px 68px;
+    background: #5D3FD3;
+    text-transform: uppercase;
+}
+.common-btn:hover {
+    background: #00101D;
+    color: #fff;
+}
+
+/*********************  Default-CSS close  *********************/
+
+/*--------------- Header Css Start ----------------*/
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px 0;
+    z-index: 100;
+}
+header.fixed {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+.header-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav-block{
+    display: flex;
+    align-items: center;
+}
+.menu-nav ul li {
+    display: inline-block;
+    position: relative;
+    margin-right: 40px;
+}
+.menu-nav ul li a {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #5B7079;
+}
+.menu-nav ul li a:hover {
+    color: #5D3FD3;
+}
+.menu-toggle-btn{
+    display: none;
+}
+.menu-toggle-btn span {
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: #444444;
+    border-radius: 35px;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.menu-toggle-btn span:nth-child(1) {
+    margin-top: 5px;
+}
+.mobile-open  .menu-toggle-btn span:nth-child(1) {
+    transform: rotate(
+            45deg
+    ) translateY(2px) translateX(5px);
+}
+.mobile-open  .menu-toggle-btn span:nth-child(2) {
+    opacity: 0;
+}
+.mobile-open  .menu-toggle-btn span:nth-child(3) {
+    transform: rotate(
+            -45deg
+    ) translateY(-7px) translateX(9px);
+}
+.menu-nav ul li.cm-d-none{
+    display: none;
+}
+
+
+/*--------------- Header Css End----------------*/
+
+/*--------------- Home Banner Section Start----------------*/
+.home-banner-section {
+    width: 100%;
+    background-image: url('../image/home_banner_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 170px 0 0;
+    border-radius: 0px 0px 244px 0px;
+}
+.home-banner-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.home-banner-left-col {
+    width: calc(100% - 625px);
+}
+.home-banner-right-col {
+    width: 625px;
+}
+.home-banner-title h1 {
+    font-weight: 800;
+    font-size: 60px;
+    color: #000;
+    line-height: 1.3;
+}
+.home-banner-content-block .common-desc {
+   margin: 20px 0 50px;
+    max-width: 600px;
+}
+.home-banner-content-block .common-desc p{
+    line-height: 1.6;
+}
+.common-section-btn .common-btn {
+    padding: 18px 46px;
+}
+/*--------------- Home Banner Section End----------------*/
+
+/*--------------- About Section Start----------------*/
+.about-section {
+    padding: 110px 0;
+}
+.common-inner-title h2{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    color: #000;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+.common-inner-title h2:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    max-width: 150px;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #FFFFFF 0%, #5D3FD3 55.05%, #FFFFFF 100.67%);
+    margin: 0 auto;
+}
+.about-block .common-desc{
+    padding: 30px 0 40px;
+    max-width: 938px;
+    margin: 0 auto;
+}
+.about-inner-block {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+.about-row {
+    margin: 0 -18px;
+}
+.about-col {
+    padding: 0 18px;
+}
+.about-box {
+    margin-top: 65px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 50px rgba(0, 18, 45, 0.08);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+.about-icon{
+    position: relative;
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -65px auto 40px;
+    background: #5D3FD3;
+}
+.about-icon:after{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: #5D3FD3;
+    opacity: 0.1;
+    left: -13px;
+    right: -13px;
+    top: -13px;
+    bottom: -13px;
+}
+.about-box-title h3 a{
+    font-size: 28px;
+    line-height: 34px;
+    color: #000;
+    font-weight: 700;
+    display: inline-block;
+}
+.about-box-title h3 a:hover{
+    color: #5D3FD3;;
+}
+.about-desc {
+    margin: 20px 0 30px;
+}
+.about-desc p{
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+}
+.about-line-draw {
+    max-width: 1366px;
+    height: 1px;
+    margin: 110px auto 0;
+    width: 100%;
+    background-color: #DDDDDD;;
+}
+/*--------------- About Section End----------------*/
+
+/*--------------- Thank You Section Start----------------*/
+.thank-you-section{
+    padding-bottom: 100px;
+}
+.thank-you-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.thank-you-left-col {
+    width: calc(100% - 590px);
+    padding-top: 40px;
+}
+.thank-you-right-col{
+    width: 590px;
+}
+.thank-you-content-block .common-inner-title h2:after{
+    margin:unset;
+    background: linear-gradient(90deg, #5D3FD3 0%, #FFFFFF 100.67%);
+}
+.thank-you-content-block .common-desc{
+    margin: 20px 0 35px;
+}
+.thank-you-inner-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    max-width: 820px
+}
+.thank-col{
+    width: 33.333%;
+    padding: 0 10px;
+}
+.thank-box-title h3{
+    font-size: 24px;
+    line-height: 29px;
+    color: #000;
+    font-weight: 700;
+    margin: 40px 0 20px;
+}
+.thank-you-box .common-desc p{
+    line-height: 32px;
+    font-weight: 400;
+}
+.thank-you-box .common-desc{
+    margin: 0;
+}
+
+/*--------------- Thank You Section End----------------*/
+
+/*--------------- Preparing Section Start----------------*/
+.preparing-section{
+    padding: 110px 0;
+    background: #F7FBFF;
+    border-radius:0 244px;
+}
+.preparing-block{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.preparing-left-col{
+    width: 650px;
+}
+.preparing-right-col {
+    width: calc(100% - 650px);
+    padding-left: 80px;
+}
+.preparing-image-block{
+    position: relative;
+    padding-bottom: 105px;
+}
+.preparing-image-block img {
+    border-radius: 100px 0;
+}
+.preparing-small-img img {
+    border: 10px solid #fff;
+}
+.preparing-small-img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.title-line-left h2:after {
+    margin: unset;
+    background: linear-gradient(90deg, #5D3FD3 0%, #FFFFFF 100.67%);
+}
+.preparing-content-block .common-desc {
+    margin: 25px 0 40px;
+}
+.cm-card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.07);
+    border-radius: 10px !important;
+    border: 0;
+}
+.cm-card + .cm-card {
+    margin-top: 30px;
+}
+.cm-card .card-header  {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.cm-card .card-header button {
+    border: 0;
+    padding: 23px 60px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    color: #000;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+.cm-card .card-header button:after {
+    content: '\f107';
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 50%;
+    right: 40px;
+    font-size: 22px;
+    font-weight: 100;
+    color: #000;
+    transform: translateY(-50%) rotate(180deg);
+    transition: all 0.5s ease 0s;
+}
+.cm-card .card-header button.collapsed:after{
+    transform: translateY(-50%) rotate(0deg);
+}
+.cm-card .card-body .common-desc{
+    margin: 0;
+}
+.cm-card .card-body .common-desc p + p{
+    margin-top: 20px;
+}
+.cm-card .card-body .common-desc p{
+    line-height: 32px;
+}
+.cm-card .card-body {
+    padding: 0 25px 25px 60px;
+}
+/*--------------- Preparing Section End----------------*/
+
+/*--------------- Procedure Section Start----------------*/
+.procedure-section {
+    padding: 110px 0;
+}
+.procedure-content-block {
+    max-width: 620px;
+}
+.procedure-content-block .common-desc {
+    margin-top: 25px;
+}
+.procedure-img img{
+    border-radius: 0 100px;
+}
+.procedure-img {
+    position: relative;
+    padding: 20px;
+}
+.procedure-img:after {
+    content: '';
+    max-width: 60%;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 2px solid #29ABE2;
+    border-radius: 0 100px;
+    z-index: -1;
+}
+/*--------------- Procedure Section End----------------*/
+
+/*--------------- Recovery Section Start----------------*/
+.recovery-section{
+    padding: 110px 0 150px;
+    background: #F7FBFF;
+    border-radius: 0 244px;
+}
+.common-inner-sub-title h3 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000;
+}
+.recovery-content-block .common-desc{
+    margin: 20px 0 30px;
+}
+.recovery-content-block .common-desc p{
+    line-height: 32px;
+}
+.recovery-content-block .common-desc p + p{
+    margin-top: 20px;
+}
+.recovery-section .preparing-right-col{
+    padding-left: 100px;
+}
+/*--------------- Recovery Section End----------------*/
+
+/*--------------- Faq Section Starts----------------*/
+.faq-section{
+    padding: 110px 0 0 ;
+}
+.faq-accordion-block {
+    max-width: 1205px;
+    margin: 30px auto 0;
+}
+.faq-accordion-block .cm-card .card-header button{
+    font-size: 20px;
+    line-height: 24px;
+    padding: 30px 40px 30px 30px;
+}
+.faq-accordion-block .cm-card .card-body .common-desc p{
+    font-weight: 400;
+    line-height:20px;
+}
+.faq-accordion-block .cm-card .card-body {
+    padding: 0 30px 30px 30px;
+}
+.faq-accordion-block .cm-card .card-header button:after {
+    right: 30px;
+}
+/*--------------- Faq Section End----------------*/
+
+/*--------------- Contact Section Start----------------*/
+.contact-section {
+    padding: 110px 0 100px;
+}
+.contact-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.contact-left-col{
+    width: 830px;
+}
+.contact-right-col{
+    width: calc(100% - 830px);
+    padding-left: 90px;
+}
+.contact-form-block{
+    background: #F6F6F8;
+    padding: 60px 105px 105px;
+}
+.contact-form-block .common-inner-title h2:after {
+    display: none;
+}
+.contact-form-block .common-desc p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+.my_form {
+    padding-top: 35px;
+}
+.common-input-hold {
+    margin-bottom: 20px;
+}
+.common-input-hold input, .common-input-hold textarea{
+    width: 100%;
+    height: 60px;
+    background: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    color: #000;
+    padding: 15px 30px;
+    border: 0;
+}
+.common-input-hold input::-webkit-input-placeholder, .common-input-hold textarea::-webkit-input-placeholder {
+    color: rgba(68, 68, 68, 0.3);
+    opacity: 1;
+}
+.common-input-hold textarea {
+    height: 150px;
+    resize: none;
+}
+.submit_form_btn button{
+    border: 0;
+    width: 100%;
+}
+.contact-desc label {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    width: 100%;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+.contact-details-content ul li + li {
+    margin-top: 90px;
+}
+.contact-detail-box {
+    display: flex;
+}
+.contact-icon {
+    min-width: 45px;
+    text-align: center;
+}
+.contact-desc {
+    padding-left: 25px;
+}
+.contact-desc p, .contact-desc p a{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    color: #54595F;
+}
+.contact-desc p a:hover {
+    color: #5D3FD3;;
+}
+.address_label {
+    max-width: 282px;
+}
+/*--------------- Contact Section End----------------*/
+
+/*--------------- Footer Section Start----------------*/
+.map-section iframe {
+    width: 100%;
+    height: 500px;
+    display: inherit;
+}
+.copyright-block {
+    background: #00101D;
+    padding: 30px 0;
+}
+.copyright-block p{
+    color: #C2C2C2;
+    line-height: 21px;
+    font-weight: 400;
+}
+/*--------------- Footer Section End----------------*/
+
+
+
+
+
+/*===========================================================
+====================== Media Css ===========================
+===========================================================*/
+
+
+@media (min-width: 1601px){
+    .container{
+        max-width: 1500px;
+    }
+    header .container {
+        max-width: 1560px;
+    }
+}
+@media (max-width: 1600px) {
+    body{
+        font-size: 16px;
+    }
+    .menu-nav ul li {
+        margin-right: 20px;
+    }
+    .menu-nav ul li a{
+        font-size: 16px;
+    }
+    .common-btn{
+        padding: 15px 35px;
+        font-size: 16px;
+    }
+    .home-banner-left-col {
+        width: calc(100% - 500px);
+    }
+    .home-banner-right-col {
+        width: 500px;
+    }
+    .home-banner-title h1{
+        font-size: 40px;
+    }
+    .common-inner-title h2{
+        font-size: 33px;
+        line-height: 50px;
+    }
+    .about-box-title h3 a{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .thank-box-title h3{
+        font-size: 20px;
+    }
+    .cm-card .card-header button{
+        font-size: 22px;
+    }
+    .about-desc{
+        margin-top: 10px;
+    }
+    .thank-you-left-col{
+        width: calc(100% - 400px);
+        padding: 0 20px 0 0;
+    }
+    .thank-you-right-col {
+        width: 400px;
+    }
+    .preparing-right-col {
+        width: calc(100% - 450px);
+        padding-left: 50px;
+    }
+    .preparing-left-col {
+        width: 450px;
+    }
+    .preparing-large-img{
+        max-width: 80%;
+    }
+    .preparing-small-img{
+        max-width: 65%;
+    }
+    .preparing-small-img img{
+        border: 6px solid #fff;
+    }
+    .preparing-image-block img {
+        border-radius: 70px 0;
+    }
+    .recovery-section .preparing-right-col {
+        padding-left: 50px;
+    }
+    .common-inner-sub-title h3{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .contact-desc p, .contact-desc p a{
+        font-size: 16px;
+    }
+    .faq-accordion-block .cm-card .card-header button{
+        font-size: 18px;
+    }
+    .contact-right-col {
+        width: calc(100% - 700px);
+        padding-left: 70px;
+    }
+    .contact-left-col {
+        width: 700px;
+    }
+    .contact-form-block {
+        padding: 60px 80px 80px;
+    }
+    .contact-desc label{
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+    .about-desc p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 1199px) {
+    .menu-toggle-btn {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: auto;
+        position: relative;
+        z-index: 2;
+    }
+    .header-block .main-nav-block {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: calc( 100% - 78px);
+        background-color: #fff;
+        z-index: 200;
+        padding: 15px;
+        opacity: 0;
+        visibility: hidden;
+        display: unset;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        -webkit-transition: all 0.5s ease 0s;
+        -moz-transition: all 0.5s ease 0s;
+        -ms-transition: all 0.5s ease 0s;
+        -o-transition: all 0.5s ease 0s;
+        transition: all 0.5s ease 0s;
+        align-items: unset;
+        overflow-y: auto;
+    }
+    .mobile-open .header-block .main-nav-block {
+        opacity: 1;
+        visibility: visible;
+        top: 78px;
+    }
+    .menu-nav ul li {
+        width: 100%;
+        margin-right: 0;
+    }
+    .menu-nav ul li + li a {
+        border-top: 1px solid #ccc;
+    }
+    .menu-nav ul li:last-child a {
+        border-bottom: 1px solid #ccc;
+    }
+    .menu-nav ul li a {
+        padding: 15px 0;
+        display: block;
+    }
+    .logo-hold img{
+        max-width: 100px;
+    }
+    .sign-in-btn {
+        width: 100%;
+        max-width: 930px;
+        margin: 20px auto;
+    }
+    .menu-nav{
+        width: 100%;
+        max-width: 930px;
+        margin: 0 auto;
+    }
+    .sign-in-btn .common-btn{
+        background: transparent;
+        color: #444;
+        padding: 0;
+    }
+    .sign-in-btn .common-btn:hover {
+        color: #5D3FD3;
+        background: transparent;
+    }
+    .home-banner-section {
+        border-radius: 0px 0px 140px 0px;
+        padding-top: 120px;
+    }
+    .home-banner-title h1 {
+        font-size: 35px;
+    }
+    .common-inner-title h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .common-inner-title h2:after{
+        max-width: 100px;
+    }
+    .thank-you-left-col{
+        width: 100%;
+        padding:40px 0 0;
+    }
+    .thank-you-right-col {
+        width: 100%;
+        order: -1;
+        text-align: center;
+    }
+    .thank-you-inner-row{
+        max-width: unset ;
+    }
+    .preparing-section{
+        border-radius: 0 150px;
+    }
+    .preparing-left-col {
+        width: 400px;
+    }
+    .preparing-right-col {
+        width: calc(100% - 400px);
+    }
+    .contact-right-col {
+        width: 40%;
+        padding-left: 50px;
+    }
+    .contact-left-col {
+        width: 60%;
+    }
+    .contact-form-block {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 991px) {
+    .menu-nav, .sign-in-btn  {
+        max-width: 690px;
+    }
+    .home-banner-left-col {
+        width: 100%;
+    }
+    .home-banner-right-col {
+        width: 100%;
+        order: -1;
+        text-align: center;
+    }
+    .home-banner-section{
+        padding: 100px 0 35px;
+    }
+    .about-section {
+        padding: 60px 0;
+    }
+    .about-col{
+        padding: 0 15px;
+    }
+    .about-col + .about-col {
+        margin-top: 40px;
+    }
+    .about-row {
+        margin: 0 -15px;
+    }
+    .about-line-draw{
+        margin-top: 60px;
+    }
+
+    .about-desc {
+        margin: 15px 0;
+    }
+    .thank-you-section {
+        padding-bottom: 60px;
+    }
+    .preparing-left-col {
+        width: 100%;
+    }
+    .preparing-right-col {
+        width: 100%;
+        padding: 40px 0 0;
+    }
+    .preparing-section, .procedure-section, .contact-section {
+        padding: 60px 0;
+    }
+    .faq-section{
+        padding-top: 60px;
+    }
+    .cm-order{
+        order: -1;
+    }
+    .procedure-content-block{
+        margin-top: 20px;
+    }
+    .recovery-section .preparing-right-col {
+        padding-left: 0px;
+    }
+    .recovery-section{
+        padding: 60px 0;
+        border-radius:0 150px;
+    }
+    .contact-right-col {
+        width: 100%;
+        padding: 40px 0 0;
+    }
+    .contact-left-col {
+        width: 100%;
+    }
+    .contact-details-content ul li + li {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-banner-title h1 {
+        font-size: 30px;
+    }
+    .home-banner-content-block .common-desc {
+        margin: 15px 0 25px;
+    }
+    .common-section-btn .common-btn, .common-btn{
+        padding: 12px 30px;
+    }
+    .menu-nav, .sign-in-btn  {
+        max-width: 510px;
+    }
+    .thank-you-inner-row{
+        margin: 0;
+    }
+    .thank-col{
+        width: 100%;
+        padding: 0;
+    }
+    .thank-col + .thank-col{
+        margin-top: 40px;
+    }
+    .thank-box-title h3{
+        margin: 30px 0 10px;
+    }
+    .procedure-img img, .procedure-img:after {
+        border-radius: 0 70px;
+    }
+    .procedure-img{
+        padding: 15px;
+    }
+    .map-section iframe{
+        height: 350px;
+    }
+}
+@media (max-width: 575px) {
+    .menu-nav, .sign-in-btn  {
+        max-width: 100%;
+    }
+    .home-banner-title h1 {
+        font-size: 25px;
+    }
+    .common-desc p {
+       font-size: 14px;
+    }
+    .common-section-btn .common-btn, .common-btn{
+        font-size: 14px;
+    }
+    .home-banner-section{
+        border-radius: 0px 0px 100px 0px;
+    }
+    .sign-in-btn .common-btn{
+        font-size: 16px;
+    }
+    .about-icon{
+        width: 80px;
+        height: 80px;
+        margin: -60px auto 30px;
+    }
+    .about-icon img {
+        max-width: 50%;
+    }
+    .about-icon:after{
+        left: -10px;
+        right: -10px;
+        top: -10px;
+        bottom: -10px;
+    }
+    .about-box{
+        margin-top: 50px;
+    }
+    .common-inner-title h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    body{
+        font-size: 14px;
+    }
+    .about-desc p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .thank-you-box .common-desc p{
+        line-height: 20px;
+    }
+    .thank-you-box .common-desc p{
+        line-height: 25px;
+    }
+    .cm-card .card-header button{
+        padding: 15px 40px 15px 20px;
+        font-size: 20px;
+    }
+    .cm-card .card-header button:after{
+        right: 30px;
+    }
+    .cm-card + .cm-card {
+        margin-top: 20px;
+    }
+    .preparing-section, .recovery-section {
+        border-radius: 0 60px;
+    }
+    .cm-card .card-body {
+        padding: 0 20px 20px;
+    }
+    .cm-card .card-body .common-desc p, .recovery-content-block .common-desc p {
+        line-height: 20px;
+    }
+    .cm-card .card-body .common-desc p + p {
+        margin-top: 10px;
+    }
+    .preparing-image-block img {
+        border-radius: 40px 0;
+    }
+    .preparing-image-block{
+        padding-bottom: 70px;
+    }
+    .preparing-content-block .common-desc{
+        margin-bottom: 20px;
+    }
+    .procedure-img img, .procedure-img:after {
+        border-radius: 0 40px;
+    }
+    .recovery-content-block .common-desc {
+        margin: 20px 0;
+    }
+    .common-inner-sub-title h3 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .recovery-content-block .common-desc p + p {
+        margin-top: 10px;
+    }
+    .faq-accordion-block .cm-card .card-header button {
+        font-size: 16px;
+        padding: 15px 40px 15px 20px;
+    }
+    .faq-accordion-block .cm-card .card-header button:after {
+        right: 20px;
+    }
+    .faq-accordion-block .cm-card .card-body {
+        padding: 0 15px 20px 20px;
+    }
+    .contact-form-block {
+        padding: 25px;
+    }
+    .common-input-hold input, .common-input-hold textarea{
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .common-input-hold input{
+        height: 50px;
+    }
+    .contact-form-block .common-desc p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .copyright-block{
+        padding: 20px 0;
+    }
+
+
+
+}
+
+@media (max-width: 450px) {}
+@media (max-width: 400px) {
+    .common-section-btn .common-btn, .common-btn{
+        display: block;
+    }
+    .sign-in-btn .common-btn{
+        text-align: left;
+    }
+}
+
+
+
+

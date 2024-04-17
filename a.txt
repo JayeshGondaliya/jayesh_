@@ -1,0 +1,102 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add and Delete Multiple Photos</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <style>
+    #photo-container {
+      text-align: center;
+    }
+    .photo {
+      display: inline-block;
+      margin: 10px;
+      position: relative;
+    }
+    .photo img {
+      max-width: 300px; /* Increased size */
+      max-height: 300px; /* Increased size */
+      display: block;
+      margin: 0 auto;
+    }
+    .delete-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: rgba(255, 0, 0, 0.8);
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .photo:hover .delete-btn {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div id="photo-container">
+    <input type="file" id="file-input" accept="image/*" multiple style="display:none;">
+    <button id="add-photos-btn">Add Photos</button>
+    <div id="photos-preview"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+<script>
+    $(document).ready(function() {
+  // Load previously uploaded photos from localStorage
+  var savedPhotos = JSON.parse(localStorage.getItem('uploadedPhotos')) || [];
+  showPhotos(savedPhotos);
+
+  $('#add-photos-btn').click(function() {
+    $('#file-input').click();
+  });
+
+  $('#file-input').change(function() {
+    var files = this.files;
+    if (files.length > 0) {
+      for (var i = 0; i < files.length; i++) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+          var photo = $('<div class="photo"><img src="' + e.target.result + '" alt="Photo"><button class="delete-btn">Delete</button></div>');
+          $('#photos-preview').append(photo);
+          photo.find('.delete-btn').click(function() {
+            $(this).parent().remove();
+            updateLocalStorage();
+          });
+        };
+        reader.readAsDataURL(files[i]);
+      }
+      updateLocalStorage();
+    }
+  });
+
+  function showPhotos(photos) {
+    $('#photos-preview').empty();
+    for (var i = 0; i < photos.length; i++) {
+      var photo = $('<div class="photo"><img src="' + photos[i] + '" alt="Photo"><button class="delete-btn">Delete</button></div>');
+      $('#photos-preview').append(photo);
+      photo.find('.delete-btn').click(function() {
+        $(this).parent().remove();
+        updateLocalStorage();
+      });
+    }
+  }
+
+  function updateLocalStorage() {
+    var photos = [];
+    $('#photos-preview .photo img').each(function() {
+      photos.push($(this).attr('src'));
+    });
+    localStorage.setItem('uploadedPhotos', JSON.stringify(photos));
+  }
+});
+
+</script>
+</html>  -->
